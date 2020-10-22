@@ -35,6 +35,31 @@
             class="logo logo--header"
             >Web<span lang="en" class="logo--dark-theme">Studio</span></a
           >
+          <button
+            tybe="button"
+            class="page-header__menu-button is-open"
+            aria-expanded="false"
+            aria-controls="page-header__menu"
+            data-menu-button
+          >
+            <svg
+              width="40px"
+              hight="40px"
+              aria-label="Переключатель мобильного меню"
+            >
+              <use
+                class="menu-button__icon-cross"
+                href="./img/sprite.svg#cross-head-icon"
+              ></use>
+              <use
+                class="menu-button__icon-menu"
+                href="./img/sprite.svg#menu-head-icon"
+              ></use>
+            </svg>
+          </button>
+          <div class="page-header__menu data-menu" id="page-header__menu">
+            Контент меню
+          </div>
           <ul class="site-nav list">
             <li class="item"><a href="./index.html" class="link">Студия</a></li>
             <li class="item current">

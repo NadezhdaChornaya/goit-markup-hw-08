@@ -1,13 +1,25 @@
-@import "./utils/variables";
-@import "./utils/hidden";
-@import "./base/common";
-@import "./base/button";
-@import "./utils/list";
+@import "./_utils.scss/variables";
+@import "./_utils.scss/breakpoints";
+@import "./_base.scss/common";
+@import "./_base.scss/logo";
+@import "./_base.scss/list";
+@import "./_base.scss/button";
+@import "./_base.scss/container";
 
-// components
-@import "./components/page-header";
-@import "./base/logo";
-@import "./base/container";
-@import "./components/page-footer";
-@import "./components/section-title";
-@import "./components/portfolio";
+// ================ COMPONENTS ==================
+
+@import "./_components.scss/page-header";
+// =====================================================
+// @import "./utils/variables";
+// @import "./utils/hidden";
+// @import "./base/common";
+// @import "./base/button";
+// @import "./utils/list";
+
+// // components
+// @import "./components/page-header";
+// @import "./base/logo";
+// @import "./base/container";
+// @import "./components/page-footer";
+// @import "./components/section-title";
+// @import "./components/portfolio";

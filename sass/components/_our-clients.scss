@@ -1,0 +1,46 @@
+.clients-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 170px;
+    height: 90px;
+
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+  }
+
+  &__icon {
+    fill: $icon-color;
+
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+  }
+
+  &__link:hover .clients-section__icon {
+    fill: $acsent-color;
+  }
+
+  &__item:hover .clients-section__link {
+    border-color: $acsent-color;
+  }
+}
+
+.clients-section-list {
+  display: flex;
+  justify-content: space-between;
+}

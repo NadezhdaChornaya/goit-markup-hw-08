@@ -1,0 +1,122 @@
+.page-header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  min-height: $height-header-page;
+  letter-spacing: 0.02em;
+  background-color: $secondary-color;
+
+  &.header-border {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $border-color-secondary;
+  }
+}
+
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+/* == header icons == */
+
+.header-section__icon {
+  display: block;
+  margin-right: 10px;
+
+  fill: $primery-text-color;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}
+
+.contacts-details:hover .header-section__icon {
+  fill: $acsent-color;
+}
+
+// main navigation
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.current::after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  background-color: $acsent-color;
+  border-radius: 2px;
+}
+
+.nav-flex {
+  display: flex;
+  align-items: center;
+
+  & .link {
+    display: block;
+
+    /* для площади hover */
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $title-text-color;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: $timing-function;
+
+    &.link:hover,
+    & .link:focus,
+    &.link.active {
+      color: $acsent-color;
+    }
+  }
+}
+
+.header-contacts {
+  display: flex;
+
+  & .contacts-details:hover {
+    color: $acsent-color;
+  }
+
+  & .item-contacts + .item-contacts {
+    margin-left: 50px;
+  }
+
+  & .contacts-details {
+    color: $primery-text-color;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    text-decoration: none;
+  }
+}
+
+.address-flex {
+  margin-left: auto;
+}
+
+.contacts-details {
+  display: flex;
+  height: 80px;
+  justify-content: center;
+  align-items: center;
+
+  transition-property: fill, color;
+  transition-duration: 250ms;
+  transition-timing-function: $timing-function;
+}

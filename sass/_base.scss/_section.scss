@@ -1,0 +1,12 @@
+.team-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: $button-background;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}

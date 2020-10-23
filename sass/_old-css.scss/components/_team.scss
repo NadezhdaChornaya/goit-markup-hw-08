@@ -22,7 +22,7 @@
 
 .box-content {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
   padding-left: 32px;
   padding-right: 32px;
   text-align: center;
@@ -51,8 +51,7 @@
   letter-spacing: 0.03em;
 }
 
-.sosial-list,
-.clients-section-list {
+.sosial-list {
   display: flex;
   justify-content: space-between;
 }
@@ -71,15 +70,15 @@
   transition-property: background-color, fill;
   transition-duration: 250ms;
   transition-timing-function: $timing-function;
+}
 
-  &:hover {
-    background-color: $acsent-color;
-    fill: $secondary-color;
-  }
+.sosial-list__link:hover {
+  background-color: $acsent-color;
+  fill: $secondary-color;
+}
 
-  &:hover .sosial-list__icon {
-    fill: $secondary-color;
-  }
+.sosial-list__link:hover .sosial-list__icon {
+  fill: $secondary-color;
 }
 
 .sosial-list__icon {

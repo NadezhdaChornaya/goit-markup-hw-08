@@ -1,5 +1,14 @@
 .page-header {
   position: relative;
+  width: 100%;
+  letter-spacing: 0.02em;
+  background-color: $secondary-color;
+
+  &.header-border {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: $border-color-secondary;
+  }
 }
 
 .page-header__menu-button {

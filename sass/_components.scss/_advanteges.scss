@@ -1,0 +1,87 @@
+// ========================== MOBAIL VERSION ==========================
+.advantages-list__item {
+  width: calc(100%-30px);
+}
+
+.advantages-list__item::before {
+  content: "";
+  display: block;
+  width: calc(100%-30px);
+  height: 120px;
+
+  margin-bottom: 30px;
+  border-radius: 4px;
+  outline: 1px solid tomato;
+  background-color: $button-background;
+}
+
+.advantages-list {
+  background-color: $secondary-color;
+}
+
+.advantages-list .first-icon::before {
+  background-image: url(../img/Group-icon.png);
+}
+
+.advantages-list .second-icon::before {
+  background-image: url(../img/clock-icon.png);
+}
+
+.advantages-list .third-icon::before {
+  background-image: url(../img/diagram-icon.png);
+}
+
+.advantages-list .fourth-icon::before {
+  background-image: url(../img/astronaut-icon.png);
+}
+
+.advantages-list .first-icon::before,
+.advantages-list .second-icon::before,
+.advantages-list .third-icon::before,
+.advantages-list .fourth-icon::before {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 70px 70px;
+}
+
+.advantages-list__title {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: $title-text-color;
+  text-transform: uppercase;
+}
+
+.advantages-list__text {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+// ==================== TABLET VERSION ========================
+
+@media screen and (min-width: 768px) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .advantages-list__item {
+    width: 354px;
+  }
+
+  .advantages-list__item::before {
+    width: calc ((100% - 2 * 30px) / 2);
+  }
+
+  .advantages-list__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}

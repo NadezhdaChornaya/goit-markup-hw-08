@@ -5,14 +5,6 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-
-  &:nth-child(-n + 2) {
-    margin-bottom: 30px;
-  }
-
-  &:nth-child(n + 3) {
-    margin-bottom: 60px;
-  }
 }
 
 .team-item__img {
@@ -82,6 +74,16 @@
   fill: $icon-color;
 }
 
+@media screen and (max-width: 1199px) {
+  .team-item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+
+  .team-item:nth-child(n + 3) {
+    margin-bottom: 60px;
+  }
+}
+
 // ==================== TABLET VERSION ========================
 
 @media screen and (min-width: 768px) {
@@ -119,12 +121,4 @@
     padding-left: 32px;
     padding-right: 32px;
   }
-
-  //   .team-item {
-  //     margin-bottom: 0;
-
-  //     &:nth-child(-n + 2) {
-  //       margin-bottom: 0;
-  //     }
-  //   }
 }

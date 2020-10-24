@@ -116,6 +116,40 @@ img {
   display: none;
 }
 
+.hero-section {
+  padding-top: 118px;
+  padding-bottom: 128px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2f303a;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/background-image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  .hero-section {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .hero-section {
+    padding-top: 118px;
+    padding-bottom: 128px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-section {
+    padding-left: 204px;
+    padding-right: 204px;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
@@ -123,6 +157,13 @@ img {
   }
   .occupation-section {
     display: block;
+  }
+  .hero-section {
+    height: 600px;
+    padding-top: 200px;
+    padding-left: 452px;
+    padding-right: 452px;
+    padding-bottom: 200px;
   }
 }
 

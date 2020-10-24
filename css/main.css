@@ -16,7 +16,7 @@ img {
 
 .body {
   background-color: #ffffff;
-  color: #757575;
+  color: #ffffff;
   font-family: Roboto, sans-serif;
   padding-top: 80px;
 }
@@ -105,13 +105,24 @@ img {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #ffffff;
+}
+
+.team-section {
   background-color: #f5f4fa;
 }
 
+.occupation-section {
+  display: none;
+}
+
 @media screen and (min-width: 1200px) {
-  .team-section {
+  .section {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  .occupation-section {
+    display: block;
   }
 }
 
@@ -124,6 +135,12 @@ img {
   font-size: 28px;
   line-height: 0.85;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .selection-title {
+    margin-bottom: 50px;
+  }
 }
 
 .page-header {
@@ -247,6 +264,13 @@ img {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  color: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .advantages-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -261,6 +285,19 @@ img {
     width: calc((100%- (2 * 30px)) / 2);
   }
   .advantages-list__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+  .advantages-list__item:nth-child(-2n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages-list__item {
+    width: calc((100% - (3 * 30px)) / 4);
+    outline: 1px solid teal;
+  }
+  .advantages-list__item:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -372,5 +409,41 @@ img {
     padding-left: 32px;
     padding-right: 32px;
   }
+}
+
+.work-examples {
+  display: flex;
+}
+
+.work-examples__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.work-item {
+  position: relative;
+  width: calc((100% - 2 * 30px) / 3);
+  margin-right: 30px;
+}
+
+.work-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.work-example__background-text {
+  position: absolute;
+  bottom: 0;
+  width: 370px;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
 }
 /*# sourceMappingURL=main.css.map */

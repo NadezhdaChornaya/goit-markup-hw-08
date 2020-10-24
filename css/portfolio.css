@@ -16,7 +16,7 @@ img {
 
 .body {
   background-color: #ffffff;
-  color: #757575;
+  color: #ffffff;
   font-family: Roboto, sans-serif;
   padding-top: 80px;
 }
@@ -105,13 +105,24 @@ img {
 .section {
   padding-top: 60px;
   padding-bottom: 60px;
+  background-color: #ffffff;
+}
+
+.team-section {
   background-color: #f5f4fa;
 }
 
+.occupation-section {
+  display: none;
+}
+
 @media screen and (min-width: 1200px) {
-  .team-section {
+  .section {
     padding-top: 94px;
     padding-bottom: 94px;
+  }
+  .occupation-section {
+    display: block;
   }
 }
 
@@ -124,6 +135,12 @@ img {
   font-size: 28px;
   line-height: 0.85;
   letter-spacing: 0.03em;
+}
+
+@media screen and (min-width: 1200px) {
+  .selection-title {
+    margin-bottom: 50px;
+  }
 }
 
 .page-header {

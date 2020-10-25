@@ -42,6 +42,10 @@ img {
   color: #212121;
 }
 
+.logo--header {
+  margin-right: auto;
+}
+
 .list {
   list-style: none;
   padding: 0px;
@@ -434,6 +438,7 @@ img {
   width: 100%;
   letter-spacing: 0.02em;
   background-color: #ffffff;
+  outline: 1px solid teal;
 }
 
 .page-header.header-border {
@@ -442,15 +447,20 @@ img {
   border-bottom-color: #ececec;
 }
 
+.nav-flex__mob {
+  display: flex;
+  align-items: center;
+}
+
 .page-header__menu-button {
-  display: inline-block;
+  display: inline-flex;
   margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
 }
 
-.menu-button__icon-cross {
+.page-header__menu-button .menu-button__icon-cross {
   display: none;
 }
 
@@ -458,29 +468,17 @@ img {
   display: block;
 }
 
-.page-header__menu-button:hover .menu-button__icon-cross {
-  fill: #2196f3;
-}
-
 .page-header__menu-button.is-open .menu-button__icon-menu {
   display: none;
 }
 
-.page-header__menu-button:hover .menu-button__icon-menu {
-  fill: #2196f3;
-}
-
 .page-header__menu {
-  display: none;
   position: absolute;
   top: 100%;
   left: 0;
-  width: 480px;
-  height: 453px;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background-color: #ffffff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  width: 100%;
+  background-color: violet;
+  display: none;
 }
 
 .page-header__menu.is-open {

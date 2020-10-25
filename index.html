@@ -27,36 +27,39 @@
     <header class="page-header">
       <div class="container header-flex">
         <nav class="nav-flex">
-          <a
-            href="./index.html"
-            arial-label="logo"
-            lang="en"
-            class="logo logo--header"
-            >Web<span lang="en" class="logo--dark-theme">Studio</span></a
-          >
-          <button
-            tybe="button"
-            class="page-header__menu-button is-open"
-            aria-expanded="false"
-            aria-controls="page-header__menu"
-            data-menu-button
-          >
-            <svg
-              width="40"
-              hight="40"
-              aria-label="Переключатель мобильного меню"
+          <div class="nav-flex__mob">
+            <a
+              href="./index.html"
+              arial-label="logo"
+              lang="en"
+              class="logo logo--header"
+              >Web<span lang="en" class="logo--dark-theme">Studio</span></a
             >
-              <use
-                class="menu-button__icon-cross"
-                href="./img/sprite.svg#cross-head-icon"
-              ></use>
-              <use
-                class="menu-button__icon-menu"
-                href="./img/sprite.svg#menu-head-icon"
-              ></use>
-            </svg>
-          </button>
-          <div class="page-header__menu data-menu" id="page-header__menu">
+
+            <button
+              type="button"
+              class="page-header__menu-button is-open"
+              aria-expanded="false"
+              aria-controls="page-header__menu"
+              data-menu-button
+            >
+              <svg
+                width="40"
+                height="40"
+                aria-label="Переключатель мобильного меню"
+              >
+                <use
+                  class="menu-button__icon-cross"
+                  href="./img/sprite.svg#cross-head-icon"
+                ></use>
+                <use
+                  class="menu-button__icon-menu"
+                  href="./img/sprite.svg#menu-head-icon"
+                ></use>
+              </svg>
+            </button>
+          </div>
+          <div class="page-header__menu" data-menu id="page-header__menu">
             Контент меню
           </div>
           <ul class="site-nav list">
@@ -780,6 +783,7 @@
         </form>
       </div>
     </div>
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

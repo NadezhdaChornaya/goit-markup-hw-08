@@ -171,6 +171,7 @@
 .form-agreement {
   font-size: 12px;
   line-height: 1.16;
+  margin-left: 1px;
   color: $acsent-color;
 }
 
@@ -199,5 +200,13 @@
 
   .form-field {
     margin-bottom: 20px;
+  }
+
+  .form-checkbox {
+    margin-bottom: 30px;
+  }
+
+  .form-text {
+    line-height: 1.15;
   }
 }

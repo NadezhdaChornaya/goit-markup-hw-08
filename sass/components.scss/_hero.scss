@@ -1,11 +1,16 @@
 // ========================== MOBAIL VERSION ==========================
 
+.hero-section {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .hero-section__block {
   display: flex;
   flex-direction: column;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  // margin-left: auto;
+  // margin-right: auto;
   text-align: center;
 }
 

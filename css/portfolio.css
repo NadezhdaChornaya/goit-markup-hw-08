@@ -781,13 +781,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
-    padding-left: 76px;
-    padding-right: 89px;
-  }
   .footer-container__communications {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
   }
   .footer-input {

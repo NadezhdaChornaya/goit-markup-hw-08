@@ -847,6 +847,7 @@ img {
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .sosial-list__link {
@@ -1166,13 +1167,9 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .footer {
-    padding-left: 76px;
-    padding-right: 89px;
-  }
   .footer-container__communications {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: baseline;
   }
   .footer-input {

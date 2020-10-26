@@ -601,13 +601,19 @@ img {
     justify-content: center;
     margin-bottom: 30px;
   }
+  .work__block:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
   .work {
     display: flex;
     flex-wrap: wrap;
-    width: calc((100% - (2 * 30px)) / 2);
   }
   .flex-box__text {
     padding: 49px 24px;
+  }
+  .spesial-container {
+    padding-right: 18px;
+    padding-left: 18px;
   }
 }
 
@@ -615,8 +621,15 @@ img {
   .work {
     width: calc((100% - (3 * 30px)) / 3);
   }
+  .work__block:not(:nth-child(3n + 3)) {
+    margin-right: 30px;
+  }
   .flex-box__text {
     padding: 63px 24px;
+  }
+  .spesial-container {
+    padding-right: 15px;
+    padding-left: 15px;
   }
 }
 

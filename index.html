@@ -38,7 +38,7 @@
 
             <button
               type="button"
-              class="page-header__menu-button is-open"
+              class="page-header__menu-button"
               aria-expanded="false"
               aria-controls="page-header__menu"
               data-menu-button
@@ -60,38 +60,45 @@
             </button>
           </div>
           <div class="page-header__menu" data-menu id="page-header__menu">
-            Контент меню
+            <ul class="site-nav list">
+              <li class="item current">
+                <a href="" class="link active">Студия</a>
+              </li>
+              <li class="item">
+                <a href="./portfolio.html" class="link">Портфолио</a>
+              </li>
+              <li class="item"><a href="" class="link">Контакты</a></li>
+            </ul>
+            <address class="address-flex">
+              <ul class="header-contacts list">
+                <li class="item-contacts">
+                  <a href="mailto:info@devstudio.com" class="contacts-details"
+                    ><svg
+                      class="header-section__icon"
+                      width="16px"
+                      height="12px"
+                    >
+                      <use href="./img/sprite.svg#email"></use>
+                    </svg>
+                    info@devstudio.com
+                  </a>
+                </li>
+                <li class="item-contacts">
+                  <a href="tel:380961111111" class="contacts-details"
+                    ><svg
+                      class="header-section__icon"
+                      width="16px"
+                      height="12px"
+                    >
+                      <use href="./img/sprite.svg#phone"></use>
+                    </svg>
+                    +38 096 111 11 11
+                  </a>
+                </li>
+              </ul>
+            </address>
           </div>
-          <ul class="site-nav list">
-            <li class="item current">
-              <a href="" class="link active">Студия</a>
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="link">Портфолио</a>
-            </li>
-            <li class="item"><a href="" class="link">Контакты</a></li>
-          </ul>
         </nav>
-        <address class="address-flex">
-          <ul class="header-contacts list">
-            <li class="item-contacts">
-              <a href="mailto:info@devstudio.com" class="contacts-details"
-                ><svg class="header-section__icon" width="16px" hight="12px">
-                  <use href="./img/sprite.svg#email"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="item-contacts">
-              <a href="tel:380961111111" class="contacts-details"
-                ><svg class="header-section__icon" width="10px" hight="16px">
-                  <use href="./img/sprite.svg#phone"></use>
-                </svg>
-                +38 096 111 11 11
-              </a>
-            </li>
-          </ul>
-        </address>
       </div>
     </header>
     <main>

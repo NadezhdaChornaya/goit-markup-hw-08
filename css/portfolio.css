@@ -403,6 +403,7 @@ img {
   }
   .site-nav {
     flex-direction: row;
+    align-items: center;
     margin-right: 84px;
   }
   .item:not(:last-child) {
@@ -425,10 +426,6 @@ img {
 }
 
 @media screen and (max-width: 1199px) {
-  .page-header {
-    padding-top: 24px;
-    padding-bottom: 25px;
-  }
   .item-contacts:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -439,6 +436,10 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
   .site-nav .link {
     font-size: 14px;
     line-height: 1.14;

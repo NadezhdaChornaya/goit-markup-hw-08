@@ -537,12 +537,13 @@ img {
   }
 }
 
-.item {
-  display: block;
-}
-
-.item:not(:last-child) {
-  margin-bottom: 40px;
+@media screen and (max-width: 767px) {
+  .item {
+    display: block;
+  }
+  .item:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 .site-nav .link {
@@ -567,6 +568,17 @@ img {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
+}
+
+.site-nav .item {
+  position: relative;
+}
+
+.current::after {
+  position: absolute;
+  content: "";
+  top: calc(100% + 8px);
+  left: 0;
 }
 
 .header-contacts {
@@ -631,6 +643,9 @@ img {
   .header-section__icon {
     margin-right: 8px;
   }
+  .current::after {
+    top: calc(100% + 28px);
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1999px) {
@@ -673,12 +688,6 @@ img {
   .current {
     position: relative;
     margin-bottom: 10px;
-  }
-  .current::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
   }
 }
 

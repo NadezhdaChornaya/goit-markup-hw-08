@@ -125,6 +125,17 @@
   border-radius: 2px;
 }
 
+.site-nav .item {
+  position: relative;
+}
+
+.current::after {
+  position: absolute;
+  content: "";
+  top: calc(100% + 8px);
+  left: 0;
+}
+
 .header-contacts {
   display: flex;
   flex-direction: column;
@@ -191,6 +202,10 @@
   .header-section__icon {
     margin-right: 8px;
   }
+
+  .current::after {
+    top: calc(100% + 28px);
+  }
   @media screen and (max-width: 1999px) {
     .item-contacts:not(:last-child) {
       margin-bottom: 10px;
@@ -241,12 +256,5 @@
   .current {
     position: relative;
     margin-bottom: 10px;
-  }
-
-  .current::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
   }
 }

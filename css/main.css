@@ -730,6 +730,10 @@ img {
   background-image: url(../img/Group-icon.png);
 }
 
+.advantages-list .first-icon::before {
+  background-image: url(../img/Group-icon.png);
+}
+
 .advantages-list .second-icon::before {
   background-image: url(../img/clock-icon.png);
 }
@@ -988,15 +992,15 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients__link:hover .clients__icon {
+  fill: #2196f3;
+}
+
 .clients__icon {
   fill: #afb1b8;
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients__link:hover .clients__icon {
-  fill: #2196f3;
 }
 
 .client__item:hover .clients__link {

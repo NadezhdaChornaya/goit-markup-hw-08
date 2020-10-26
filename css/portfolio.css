@@ -247,21 +247,21 @@ img {
   display: none;
 }
 
-.page-header__menu-button.is-open .menu-button__icon-cross {
+.page-header__menu-button .menu-button__icon-cross.is-open .menu-button__icon-cross {
   display: block;
 }
 
-.page-header__menu-button:hover .menu-button__icon-cross,
-.page-header__menu-button:focus .menu-button__icon-cross {
+.page-header__menu-button .menu-button__icon-cross:hover .menu-button__icon-cross,
+.page-header__menu-button .menu-button__icon-cross:focus .menu-button__icon-cross {
   fill: #2196f3;
 }
 
-.page-header__menu-button.is-open .menu-button__icon-menu {
+.page-header__menu-button .menu-button__icon-cross.is-open .menu-button__icon-menu {
   display: none;
 }
 
-.page-header__menu-button:hover .menu-button__icon-menu,
-.page-header__menu-button:focus .menu-button__icon-menu {
+.page-header__menu-button .menu-button__icon-cross:hover .menu-button__icon-menu,
+.page-header__menu-button .menu-button__icon-cross:focus .menu-button__icon-menu {
   fill: #2196f3;
 }
 
@@ -334,6 +334,9 @@ img {
 }
 
 .current::after {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
   display: block;
   content: "";
   width: 100%;
@@ -344,13 +347,6 @@ img {
 
 .site-nav .item {
   position: relative;
-}
-
-.current::after {
-  position: absolute;
-  content: "";
-  top: calc(100% + 8px);
-  left: 0;
 }
 
 .header-contacts {
@@ -510,8 +506,7 @@ img {
   margin-right: 8px;
 }
 
-.filter__button:hover,
-.filter__button:focus {
+.filter__button:hover, .filter__button:focus {
   color: #ffffff;
   background-color: #2196f3;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);

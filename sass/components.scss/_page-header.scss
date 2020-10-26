@@ -30,23 +30,24 @@
 
 .page-header__menu-button .menu-button__icon-cross {
   display: none;
-}
 
-.page-header__menu-button.is-open .menu-button__icon-cross {
-  display: block;
-}
-.page-header__menu-button:hover .menu-button__icon-cross,
-.page-header__menu-button:focus .menu-button__icon-cross {
-  fill: $acsent-color;
-}
+  &.is-open .menu-button__icon-cross {
+    display: block;
+  }
 
-.page-header__menu-button.is-open .menu-button__icon-menu {
-  display: none;
-}
+  &:hover .menu-button__icon-cross,
+  &:focus .menu-button__icon-cross {
+    fill: $acsent-color;
+  }
 
-.page-header__menu-button:hover .menu-button__icon-menu,
-.page-header__menu-button:focus .menu-button__icon-menu {
-  fill: $acsent-color;
+  &.is-open .menu-button__icon-menu {
+    display: none;
+  }
+
+  &:hover .menu-button__icon-menu,
+  &:focus .menu-button__icon-menu {
+    fill: $acsent-color;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -117,6 +118,9 @@
 }
 
 .current::after {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
   display: block;
   content: "";
   width: 100%;
@@ -127,13 +131,6 @@
 
 .site-nav .item {
   position: relative;
-}
-
-.current::after {
-  position: absolute;
-  content: "";
-  top: calc(100% + 8px);
-  left: 0;
 }
 
 .header-contacts {
@@ -153,10 +150,10 @@
   font-size: 14px;
   line-height: 1.14;
   text-decoration: none;
-}
 
-.contacts-details:hover {
-  color: $acsent-color;
+  &:hover {
+    color: $acsent-color;
+  }
 }
 
 .header-section__icon {

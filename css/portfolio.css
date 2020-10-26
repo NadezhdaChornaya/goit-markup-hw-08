@@ -278,6 +278,7 @@ img {
   .page-header__menu {
     display: none;
     position: absolute;
+    z-index: 10;
     top: 100%;
     left: 0;
     width: 100%;
@@ -528,6 +529,10 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.work-example {
+  text-decoration: none;
+}
+
 .work__description-container {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -552,6 +557,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   text-decoration: none;
+  color: #212121;
 }
 
 .language {

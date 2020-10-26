@@ -531,7 +531,7 @@ img {
 .site-nav {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -695,6 +695,7 @@ img {
   }
   .site-nav {
     margin-right: 260px;
+    align-items: baseline;
   }
   .item-contacts {
     margin-right: 30px;

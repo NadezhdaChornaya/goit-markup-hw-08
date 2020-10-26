@@ -619,6 +619,10 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
   .nav-flex {
     display: flex;
   }
@@ -648,13 +652,13 @@ img {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1999px) {
+@media screen and (max-width: 1199px) {
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
   .item-contacts:not(:last-child) {
     margin-bottom: 10px;
-  }
-  .page-header {
-    padding-top: 21px;
-    padding-bottom: 21px;
   }
   .logo--header {
     font-size: 26px;

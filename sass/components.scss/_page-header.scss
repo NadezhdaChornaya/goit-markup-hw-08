@@ -141,13 +141,11 @@
   flex-direction: column;
   align-items: center;
 }
-
 @media screen and (max-width: 767px) {
   .item-contacts:not(:last-child) {
     margin-bottom: 16px;
   }
 }
-
 .contacts-details {
   color: $primery-text-color;
   font-style: normal;
@@ -174,8 +172,14 @@
 .contacts-details:hover .header-section__icon {
   fill: $acsent-color;
 }
+
 // ============= TABLET VERSION ====================
 @media screen and (min-width: 768px) {
+  .page-header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+
   .nav-flex {
     display: flex;
   }
@@ -206,22 +210,23 @@
   .current::after {
     top: calc(100% + 28px);
   }
-  @media screen and (max-width: 1999px) {
-    .item-contacts:not(:last-child) {
-      margin-bottom: 10px;
-    }
-    .page-header {
-      padding-top: 21px;
-      padding-bottom: 21px;
-    }
-
-    .logo--header {
-      font-size: 26px;
-      line-height: 1.19;
-    }
-  }
 }
 
+@media screen and (max-width: 1199px) {
+  .page-header {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+
+  .item-contacts:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .logo--header {
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}
 // ================ DESKTOP VERSION ======================
 
 @media screen and (min-width: 1200px) {

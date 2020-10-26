@@ -537,6 +537,14 @@ img {
   }
 }
 
+.item {
+  display: block;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 40px;
+}
+
 .site-nav .link {
   color: #212121;
   font-weight: 500;

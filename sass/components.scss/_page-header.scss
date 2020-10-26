@@ -90,10 +90,15 @@
     }
   }
 }
+@media screen and (max-width: 767px) {
+  .item {
+    display: block;
 
-// .site-nav .item {
-//   margin-right: 40px;
-// }
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
+}
 
 .site-nav .link {
   color: $title-text-color;

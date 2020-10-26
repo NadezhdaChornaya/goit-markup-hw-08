@@ -423,6 +423,9 @@ img {
   .current::after {
     top: calc(100% + 28px);
   }
+  .header-contacts {
+    align-items: flex-start;
+  }
 }
 
 @media screen and (max-width: 1199px) {

@@ -13,14 +13,16 @@
 
 .sosial-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.sosial-list__item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .box-content {
   padding-top: 30px;
   padding-bottom: 24px;
-  padding-left: 122px;
-  padding-right: 122px;
   text-align: center;
 
   background: $secondary-color;
